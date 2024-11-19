@@ -36,7 +36,7 @@ export default function Footer() {
           <ul className="space-y-2">
             <li><a href="#features" className="text-neutral-400 hover:text-amber-500 transition">Features</a></li>
             <li><a href="#specs" className="text-neutral-400 hover:text-amber-500 transition">Specifications</a></li>
-            <li><a href="/buy" className="text-neutral-400 hover:text-amber-500 transition">Shop Now</a></li>
+            <li><a onClick={() => navigate('/buy')} className="text-neutral-400 hover:text-amber-500 transition cursor-pointer">Shop Now</a></li>
           </ul>
         </div>
 
@@ -45,7 +45,7 @@ export default function Footer() {
           <ul className="space-y-2">
             <li><a href="#" className="text-neutral-400 hover:text-amber-500 transition">FAQ</a></li>
             <li><a href="#" className="text-neutral-400 hover:text-amber-500 transition">Shipping</a></li>
-            <li><a href="#" className="text-neutral-400 hover:text-amber-500 transition">Returns</a></li>
+            <li><a onClick={() => navigate('/return-policy')} className="text-neutral-400 hover:text-amber-500 transition cursor-pointer">Returns</a></li>
             <li><a href="#" className="text-neutral-400 hover:text-amber-500 transition">Contact</a></li>
           </ul>
         </div>
@@ -70,7 +70,7 @@ export default function Footer() {
           <p className="text-neutral-500">© 2024 BrewBeater. All rights reserved.</p>
           <div className="flex gap-6">
             <a href="#" className="text-neutral-500 hover:text-amber-500 transition">Privacy Policy</a>
-            <a href="#" className="text-neutral-500 hover:text-amber-500 transition">Terms of Service</a>
+            <a onClick={() => navigate('/return-policy')} className="text-neutral-500 hover:text-amber-500 transition cursor-pointer">Return Policy</a>
           </div>
         </div>
       </div>

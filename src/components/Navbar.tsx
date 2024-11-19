@@ -18,6 +18,7 @@ export default function Navbar() {
           <div className="flex items-center gap-6">
             <a href="#features" className="text-white hover:text-amber-500 transition">Features</a>
             <a href="#specs" className="text-white hover:text-amber-500 transition">Specs</a>
+            <a onClick={() => navigate('/return-policy')} className="text-white hover:text-amber-500 transition cursor-pointer">Returns</a>
             <button 
               onClick={() => navigate('/buy')}
               className="bg-amber-500 text-black px-4 py-2 rounded-full font-semibold hover:bg-amber-400 transition"
