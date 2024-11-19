@@ -1,11 +1,17 @@
 import { Coffee, Facebook, Instagram, Twitter } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 export default function Footer() {
+  const navigate = useNavigate();
+
   return (
     <footer className="bg-black py-16">
       <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
         <div className="space-y-4">
-          <div className="flex items-center gap-2">
+          <div 
+            className="flex items-center gap-2 cursor-pointer hover:opacity-80 transition"
+            onClick={() => navigate('/')}
+          >
             <Coffee className="h-6 w-6 text-amber-500" />
             <span className="text-white font-bold text-lg">BrewBeater</span>
           </div>

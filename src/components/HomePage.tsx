@@ -1,8 +1,11 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import Features from './Features';
 import Specs from './Specs';
 
 export default function HomePage() {
+  const navigate = useNavigate();
+
   return (
     <>
       {/* Hero Section with Video Background */}
@@ -32,7 +35,10 @@ export default function HomePage() {
             Designed for coffee enthusiasts who demand perfection.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-amber-500 text-black px-8 py-3 rounded-full font-semibold text-lg hover:bg-amber-400 transition">
+            <button 
+              onClick={() => navigate('/buy')}
+              className="bg-amber-500 text-black px-8 py-3 rounded-full font-semibold text-lg hover:bg-amber-400 transition"
+            >
               Buy Now - $49.99
             </button>
             <button className="border-2 border-white text-white px-8 py-3 rounded-full font-semibold text-lg hover:bg-white/10 transition">
@@ -55,7 +61,10 @@ export default function HomePage() {
             Join thousands of coffee lovers who have elevated their home brewing game.
             30-day money-back guarantee.
           </p>
-          <button className="bg-amber-500 text-black px-8 py-3 rounded-full font-semibold text-lg hover:bg-amber-400 transition">
+          <button 
+            onClick={() => navigate('/buy')}
+            className="bg-amber-500 text-black px-8 py-3 rounded-full font-semibold text-lg hover:bg-amber-400 transition"
+          >
             Get Your BrewBeater Now
           </button>
         </div>

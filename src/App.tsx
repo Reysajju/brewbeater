@@ -12,7 +12,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/BuyNow" element={<BuyNow />} />
+          <Route path="/buy" element={<BuyNow />} />
         </Routes>
         <Footer />
       </div>
